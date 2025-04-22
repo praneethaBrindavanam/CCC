@@ -1,1 +1,21 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Marquee Example</title>
+</head>
+<body>
+
+<!-- Marquee with an image -->
+<marquee>
+  <img src="https://cdn.dribbble.com/userupload/42384805/file/original-71f3476679ad74fb63368306abb1cd91.gif" alt="Animated Image" height="100">
+</marquee>
+ 
+
+
+<marquee direction="right" height="100px">
+  Welcome to my website!
+</marquee>
+
+</body>
+</html>
