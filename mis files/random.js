@@ -26,11 +26,23 @@ const filteredNames = names.filter(name =>
 console.log(filteredNames);
 ------------------------------------------------
 
-    //count the word occurances
+//count the word occurances
 const words=['apple','banana','orange','banana','apple','banana'];
 const wordCount = words.reduce((acc, word) => {
     acc[word] = (acc[word] || 0) + 1; return acc;
     }, {});
     console.log(wordCount);
+--------------------------------------------------
+
+//sum the salary if it is 10000 excceded
+const salaries = [5000, 2000, 8000, 15000, 7000, 20000];
+const commission = 0.10;
+const totalSalaries = salaries
+ .filter(salary => salary > 10000)   
+ .reduce((acc, salary) => acc + salary, 0);  
+const commissionAmount = totalSalaries * commission;  
+const totalWithCommission = totalSalaries + commissionAmount;
+console.log(totalWithCommission); 
+
 
 
