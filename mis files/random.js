@@ -15,3 +15,13 @@ const res=numbers.map((num)=>{
     return num+20
 })
 console.log(res);
+----------------------------------------------
+
+//vowels
+ const names = ['car', 'cat', 'can', 'Den', 'Dog', 'elephant', 'fox'];
+const vowels = ['a', 'e', 'i', 'o', 'u'];
+const filteredNames = names.filter(name => 
+    vowels.some(vowel => name.toLowerCase().includes(vowel))
+);
+console.log(filteredNames);
+
