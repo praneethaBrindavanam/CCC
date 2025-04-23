@@ -24,4 +24,13 @@ const filteredNames = names.filter(name =>
     vowels.some(vowel => name.toLowerCase().includes(vowel))
 );
 console.log(filteredNames);
+------------------------------------------------
+
+    //count the word occurances
+const words=['apple','banana','orange','banana','apple','banana'];
+const wordCount = words.reduce((acc, word) => {
+    acc[word] = (acc[word] || 0) + 1; return acc;
+    }, {});
+    console.log(wordCount);
+
 
